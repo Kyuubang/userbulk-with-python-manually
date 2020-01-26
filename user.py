@@ -29,7 +29,7 @@ many = ("echo for i in {"+str(start)+".."+str(stop)+"} >> user.sh")
 do = ("echo do >> user.sh")
 user = ("echo adduser "+ str(name) + "$i --disabled-password --gecos " + (name) + "$i >> user.sh")
 passwd = ("echo passwd " + str(name) + "$i <<< " + (password)+"$'\n'"+ str(password)+ ">> user.sh")
-#crearte file script for user.sh
+#create file script for user.sh
 os.system ("touch user.sh")
 os.system (do)
 os.system (user)
